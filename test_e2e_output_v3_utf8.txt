@@ -1,0 +1,29 @@
+﻿node.exe : PASS src/api.e2e.test.ts (36.211 s)
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" 
+"C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ( 
+   PASS src/api.e2e.test.ts (36.211 s):Strin  
+  g) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandEr 
+   ror
+ 
+  Webinar Routes E2E
+    ÔêÜ should update webinar seats (135 ms)
+    ÔêÜ should return 404 when webinar does 
+not exist (31 ms)
+    ÔêÜ should return 401 when user is not 
+the organizer (17 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       3 passed, 3 total
+Snapshots:   0 total
+Time:        36.578 s
+Ran all test suites matching 
+/src\\api.e2e.test.ts/i.
+Force exiting Jest: Have you considered using 
+`--detectOpenHandles` to detect async 
+operations that kept running after all tests 
+finished?
