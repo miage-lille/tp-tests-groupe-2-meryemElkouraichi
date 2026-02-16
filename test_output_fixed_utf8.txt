@@ -1,0 +1,77 @@
+﻿node.exe : FAIL src/webinars/adapters/webinar-
+repository.prisma.int.test.ts (25.655 s)
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" 
+"C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ( 
+   FAIL src/webina...t.ts (25.655 s):String)  
+   [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandEr 
+   ror
+ 
+  ÔùÅ PrismaWebinarRepository ÔÇ║ Scenario : 
+repository.create ÔÇ║ should create a webinar
+
+    thrown: "Exceeded timeout of 8000 ms for 
+a hook.
+    Add a timeout value to this test to 
+increase the timeout, if this is a 
+long-running test. See https://jestjs.io/docs/
+api#testname-fn-timeout."
+
+    [0m [90m 15 |[39m   [36mlet[39m 
+repository[33m:[39m 
+[33mPrismaWebinarRepository[39m[33m;[39m
+     [90m 16 |[39m
+    [31m[1m>[22m[39m[90m 17 |[39m   
+beforeAll([36masync[39m () [33m=>[39m {
+     [90m    |[39m   [31m[1m^[22m[39m
+     [90m 18 |[39m     [90m// Connect to 
+database[39m
+     [90m 19 |[39m     container 
+[33m=[39m [36mawait[39m [36mnew[39m 
+[33mPostgreSqlContainer[39m()
+     [90m 20 |[39m       [33m.[39mwithData
+base([32m'test_db'[39m)[0m
+
+      at webinars/adapters/webinar-repository.
+prisma.int.test.ts:17:3
+      at Object.<anonymous> (webinars/adapters
+/webinar-repository.prisma.int.test.ts:12:1)
+
+
+  ÔùÅ Test suite failed to run
+
+    TypeError: Cannot read properties of 
+undefined (reading 'stop')
+
+    [0m [90m 46 |[39m
+     [90m 47 |[39m   
+afterAll([36masync[39m () [33m=>[39m {
+    [31m[1m>[22m[39m[90m 48 |[39m     
+[36mawait[39m container[33m.[39mstop({ 
+timeout[33m:[39m [35m1000[39m 
+})[33m;[39m
+     [90m    |[39m                     
+[31m[1m^[22m[39m
+     [90m 49 |[39m     [36mreturn[39m pris
+maClient[33m.[39m$disconnect()[33m;[39m
+     [90m 50 |[39m   })[33m;[39m
+     [90m 51 |[39m[0m
+
+      at Object.<anonymous> (webinars/adapters
+/webinar-repository.prisma.int.test.ts:48:21)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        26.044 s
+Ran all test suites matching /src\\webinars\\a
+dapters\\webinar-repository.prisma.int.test.ts
+/i.
+Force exiting Jest: Have you considered using 
+`--detectOpenHandles` to detect async 
+operations that kept running after all tests 
+finished?

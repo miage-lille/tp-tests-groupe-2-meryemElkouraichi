@@ -1,0 +1,40 @@
+﻿node.exe : FAIL src/webinars/adapters/webinar-
+repository.prisma.int.test.ts (18.196 s)
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" 
+"C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ( 
+   FAIL src/webina...t.ts (18.196 s):String)  
+   [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandEr 
+   ror
+ 
+  PrismaWebinarRepository
+    Scenario : repository.create
+      ├ù should create a webinar (1 ms)
+
+  ÔùÅ PrismaWebinarRepository ÔÇ║ Scenario : 
+repository.create ÔÇ║ should create a webinar
+
+    Command failed: DATABASE_URL=postgres://us
+er_test:password_test@localhost:32774/test_db 
+npx prisma migrate deploy
+    'DATABASE_URL' is not recognized as an 
+internal or external command,
+    operable program or batch file.
+
+
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        18.535 s, estimated 19 s
+Ran all test suites matching /src\\webinars\\a
+dapters\\webinar-repository.prisma.int.test.ts
+/i.
+Force exiting Jest: Have you considered using 
+`--detectOpenHandles` to detect async 
+operations that kept running after all tests 
+finished?

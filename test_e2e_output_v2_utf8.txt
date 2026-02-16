@@ -1,0 +1,61 @@
+﻿node.exe : FAIL src/api.e2e.test.ts (34.822 s)
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" 
+"C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ( 
+   FAIL src/api.e2e.test.ts (34.822 s):Strin  
+  g) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandEr 
+   ror
+ 
+  Webinar Routes E2E
+    ÔêÜ should update webinar seats (218 ms)
+    ÔêÜ should return 404 when webinar does 
+not exist (29 ms)
+    ├ù should return 401 when user is not the 
+organizer (26 ms)
+
+  ÔùÅ Webinar Routes E2E ÔÇ║ should return 
+401 when user is not the organizer
+
+    expect(received).toEqual(expected) // 
+deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Object {
+    -   "error": "User is not the organizer 
+of this webinar",
+    +   "error": "User is not allowed to 
+update this webinar",
+      }
+
+    [0m [90m 82 |[39m       
+[33m.[39mexpect([35m401[39m)[33m;[39m
+     [90m 83 |[39m
+    [31m[1m>[22m[39m[90m 84 |[39m     ex
+pect(response[33m.[39mbody)[33m.[39mtoEqua
+l({ error[33m:[39m [32m'User is not the 
+organizer of this webinar'[39m })[33m;[39m
+     [90m    |[39m                          
+ [31m[1m^[22m[39m
+     [90m 85 |[39m   })[33m;[39m
+     [90m 86 |[39m })[33m;[39m
+     [90m 87 |[39m[0m
+
+      at Object.<anonymous> 
+(api.e2e.test.ts:84:27)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        35.241 s, estimated 37 s
+Ran all test suites matching 
+/src\\api.e2e.test.ts/i.
+Force exiting Jest: Have you considered using 
+`--detectOpenHandles` to detect async 
+operations that kept running after all tests 
+finished?
